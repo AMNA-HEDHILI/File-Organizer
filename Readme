@@ -5,9 +5,8 @@ sorts every file into folders: Images, Docs, Data, Videos, Archives, Installers.
 
 ## Before / After
 
-![before](C:\Users\LENOVO\Desktop\Programmation\File_Organizer\downloads before organization)
-![after](C:\Users\LENOVO\Desktop\Programmation\File_Organizer\downloads after organization)
-
+![Before](screenshots/downloads before organization.png)
+![After](screenshots/downloads after organization.png)
 ## Features
 
 - Sorts files by extension using a simple dictionary of rules
