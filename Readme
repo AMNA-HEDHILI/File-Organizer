@@ -31,7 +31,7 @@ Python 3.13, `pathlib`, `shutil` (both built in)
 ## How to run
 
 ```bash
-git clone https://github.com/your-username/file-organizer.git
+git clone https://github.com/AMNA-HEDHILI/File-Organizer.git
 cd file-organizer
 python File_Organizer.py
 ```
