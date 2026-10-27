@@ -6,7 +6,9 @@ sorts every file into folders: Images, Docs, Data, Videos, Archives, Installers.
 ## Before / After
 
 ![Before](screenshots/downloads before organization.png)
+
 ![After](screenshots/downloads after organization.png)
+
 ## Features
 
 - Sorts files by extension using a simple dictionary of rules
@@ -52,8 +54,4 @@ Add your own file types in the `CATEGORIES` dictionary:
 - Why a dry-run mode matters when a script touches real files
 - Working with `pathlib` and `shutil`
 
-## Possible improvements
 
-- Automatic sorting with `watchdog`
-- A log file to undo moves
-- Sort by date
