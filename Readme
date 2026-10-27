@@ -1,0 +1,60 @@
+# File Organizer
+
+A Python script that scans a messy folder (like Downloads) and automatically
+sorts every file into folders: Images, Docs, Data, Videos, Archives, Installers.
+
+## Before / After
+
+![before](C:\Users\LENOVO\Desktop\Programmation\File_Organizer\downloads before organization)
+![after](C:\Users\LENOVO\Desktop\Programmation\File_Organizer\downloads after organization)
+
+## Features
+
+- Sorts files by extension using a simple dictionary of rules
+- **Dry-run mode** to preview changes before moving anything
+- **No overwriting:** duplicate names become `photo (1).jpg`
+- Skips temporary files (`~$...`, `.crdownload`) and system files
+- Nothing is ever deleted, files are only moved
+
+## How it works
+
+1. Scan the folder
+2. Read each file's extension
+3. Match it to a category
+4. Move the file with `shutil`
+5. Leave the folder clean
+
+## Tech stack
+
+Python 3.13, `pathlib`, `shutil` (both built in)
+
+## How to run
+
+```bash
+git clone https://github.com/your-username/file-organizer.git
+cd file-organizer
+python File_Organizer.py
+```
+
+1. Set `DRY_RUN = True` and run it to preview.
+2. If the result looks right, set `DRY_RUN = False` and run again.
+
+## Customize
+
+Add your own file types in the `CATEGORIES` dictionary:
+
+```python
+".epub": "Books",
+```
+
+## What I learned
+
+- Handling edge cases: duplicates, temporary files, unknown extensions
+- Why a dry-run mode matters when a script touches real files
+- Working with `pathlib` and `shutil`
+
+## Possible improvements
+
+- Automatic sorting with `watchdog`
+- A log file to undo moves
+- Sort by date
